@@ -25,7 +25,7 @@ CalculatorForm::CalculatorForm(QWidget *parent)
     ui.binarySecondQuotientLineEdit->setValidator(binSecondVal); 
 
     //Set Octal Validator
-    QRegExp octalExpr("[0-9]+");
+    QRegExp octalExpr("[0-7]+");
     QRegExpValidator* octalFirstVal = new QRegExpValidator(octalExpr, ui.octalFirstQuotientLineEdit);
     QRegExpValidator* octalSecondVal = new QRegExpValidator(octalExpr, ui.octalSecondQuotientLineEdit);
 
